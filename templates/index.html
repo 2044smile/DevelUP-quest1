@@ -1,0 +1,49 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Songchu</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<div class="portrait"></div>
+{# 배경사진 #}
+<div class="sc"> {# sc는 songchu의 줄임 #}
+    <div class="sc-introduce">
+        <div class="header">
+            <div class="introduce">
+                I'm a
+                <div class="introduce-function">
+                    <ul class="introduce-function-list">
+                        <li>Contact</li>
+                        <li>MAP</li>
+                        <li>Bus</li>
+                        <li>Weather</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <h1 class="introduce-title">Introducing Songchu</h1></div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Reiciendis accusamus impedit quam ratione illo quod,
+            ipsum dolore dolor laboriosam voluptas sunt nostrum,
+            facilis natus. Pariatur optio, harum vel ipsa delectus.</p>
+
+    </div>
+    <div class="sc-section">bus</div>
+    <div class="sc-section">weather</div>
+    <div class="sc-section">reply</div>
+    <div class="sc-section">contact
+        <div class="icons">
+            <a class="instagram" href="">Instagram</a>
+            <a class="github" href="">Github</a>
+            <a class="blog" href="">Blog</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
