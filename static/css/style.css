@@ -4,38 +4,44 @@
         transform: translateY(0); /* 자기 자신의 너비 또는 높이 기준에서의 % 를 가져올 수 있다.*/
         /* Y를 해주었기 때문에 자기 높이 기준의 ~%를 올린다 이런식으로 생각하면 된다.*/
     }
-    25%{
+    25% {
         transform: translateY(-20%);
     }
-    50%{
+    50% {
         transform: translateY(-40%);
     }
-    75%{
+    75% {
         transform: translateY(-60%);
     }
     100% {
         transform: translateY(-80%);
     }
 }
-body, h1, p, ul {
+
+body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
 }
+
 li {
     list-style-type: none;
 }
-h1 {
+
+h1, h2, h3 {
     font-size: 100%; /* 원래 사이즈대로 가겠다.*/
     font-weight: normal;
 }
+
 a {
     color: inherit; /* 부모의 폰트 사이즈를 상속받게끔*/
     text-decoration: none; /* a 태그의 밑줄 삭제*/
 }
+
 body {
     background-color: #111;
     color: #999;
 }
+
 .introduce {
     font-size: 30px;
     line-height: 1.5; /*한 줄의 높이를 의미하는 것이다. 그럼 폰트사이즈 30이 line-height가 의미하는 것은 30이 된다.*/
@@ -43,15 +49,17 @@ body {
     margin-bottom: 20px;
     font-family: 'Squada One', cursive;
 }
+
 .introduce-function {
     display: inline-block;
     color: white;
     vertical-align: top; /* .introduce-function 의 inline-block 의 시작점을 맞춰준다? 사진*/
-    height: 1.5em;  /* introduce의 font-size *1 을 해서 값을 가져온다. 결국 부모의 값과 같은 값이 들어온다.*/
+    height: 1.5em; /* introduce의 font-size *1 을 해서 값을 가져온다. 결국 부모의 값과 같은 값이 들어온다.*/
     overflow: hidden; /* overflow: 넘쳐흐르는 것을 잘라주겠다. */
     padding-right: 0.5em;
     position: relative; /* 해당 태그의 위치를 살짝 변경하고 싶을 때 position: relative */
 }
+
 .introduce-function::after { /* ::after 가상요소를 css 단에서 추가할 수 있다. 자식으로 생성된다.*/
     content: ' ';
     position: absolute; /* after 자식이 부모의 크기만큼 덮을 수 있게 크기를 조절해준다. */
@@ -65,18 +73,21 @@ body {
     margin-right: -1em;
     box-shadow: inset 0 0 10px 10px #111;
 }
+
 .introduce-function-list { /* 움직임이 생기는 부분 */
     animation-name: rolling; /* 위에서 선언한 rolling을 가져온다. */
     animation-duration: 10s; /* 초 단위 */
-    animation-iteration-count: infinite;/* 수동으로 새로고침하지않고 자동으로 값이 변경되게하기 위해선 infinite 평생실행 */
-    animation-direction: reverse;/* 위에서부터 아래로 내려가는 것을 동작하고자 할 때 */
+    animation-iteration-count: infinite; /* 수동으로 새로고침하지않고 자동으로 값이 변경되게하기 위해선 infinite 평생실행 */
+    animation-direction: reverse; /* 위에서부터 아래로 내려가는 것을 동작하고자 할 때 */
 }
+
 .introduce-title {
     font-size: 1.5em; /* .introduce-title의 부모는 .introduce 이다.*/
     line-height: 1;
     color: deeppink;
     /* 자신의 부모 폰트사이즈 30px의 1.5배가 되게끔 해라! 자신의 부모 폰트사이즈가 변경되면 같이 변경된다.*/
 }
+
 .portrait {
     background-image: url("/static/images/profile.png");
     background-size: cover;
@@ -90,12 +101,29 @@ body {
 
 .sc-introduce,
 .sc-section { /* introduce안의 section을 전부 설정해주도록 하자*/
-    padding-bottom: 7%;
+    padding-bottom: 14%;
 }
 
+.sc-section h1 {
+    border-top: 3px solid;
+    color: orangered;
+    font-size: 30px;
+}
+.sc-section h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 1.1px solid;
+    color: orangered;
+    font-size: 1.3rem;
+}
+.sc-section h3 {
+    border-top: 1.1px solid;
+    font-size: 1.2rem;
+}
 .icons {
-
+    margin: 20px 0;
 }
+
 .icons a {
     /*아래와 같이 크기를 조정한다고해서 크기가 조정되지 않는다.
     왜냐하면 a 태그는 inline 태그이기 때문이다. display: inline-block; 으로 변경해주자!
@@ -112,15 +140,43 @@ body {
     height: 32px;
     background-image: url("/static/images/instagram.png");
 }
+
 .icons a.github {
     display: inline-block;
     width: 32px;
     height: 32px;
     background-image: url("/static/images/github.png");
 }
+
 .icons a.blog {
     display: inline-block;
     width: 32px;
     height: 32px;
     background-image: url("/static/images/blog.png");
+}
+.downtown {
+    font-size: 0.7rem;
+}
+.downtown h3 {
+    color: orange;
+}
+
+.downtown li {
+    padding-bottom: 20px;
+}
+.downtown li:last-child {
+    padding-bottom: 0;
+}
+.countryside {
+    font-size: 0.7rem;
+}
+.countryside h3 {
+    color: orange;
+}
+
+.countryside li {
+    padding-bottom: 20px;
+}
+.countryside li:last-child {
+    padding-bottom: 0;
 }
