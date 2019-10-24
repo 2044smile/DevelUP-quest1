@@ -3,13 +3,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <title>Songchu</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Squada+One&display=swap" rel="stylesheet">
     {# 구글폰트 #}
+    <script type="text/javascript"
+            src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=byn7ctlym2"></script>
+    {# Naver 지도 #}
 </head>
 <body>
 <div class="portrait"></div>
@@ -39,8 +42,21 @@
             전라남도 장흥군과는 이름이 헷갈리는 관계에 있다. 한자까지 똑같다. 거기에 장흥면이 산 좋고 물 좋은 교외 관광지로 이름나 있는데 장흥군 또한 관광 산업이 발달한 곳이라 더욱 헷갈린다. 하지만,
             실생활에서는 거의 다 송추, 일영이라고 부르지 장흥이라고 하는 경우는 드물기 때문에 의외로 혼동될 일은 적다.
             서울시에 직접 맞닿아 있는 2개의 면 중 하나다. 나머지 하나는 남양주시 별내면.
+            <br>-나무위키-
+
         </p>
     </div>
+    <div class="sc-section">
+        <h1>Map</h1>
+        <div id="map" style="width:100%;height:400px;"></div>
+    </div>
+    <script>
+        var mapOptions = {
+            center: new naver.maps.LatLng(37.718693, 126.975022),
+            zoom: 6
+        };
+        var map = new naver.maps.Map('map', mapOptions);
+    </script>
     <div class="sc-section">
         <h1>Bus</h1>
         <ul class="downtown">
@@ -78,17 +94,30 @@
         </ul>
     </div>
     <div class="sc-section">
-        <h2>Weather</h2>
-        Weather in Yangju, KR <br>
-        {{ time }} <br>
-        Cloudiness : Sky is {{ status }}<br>
-        Temperature : {{ temp }}°C
+        <h1>Weather</h1>
+        <h2>
+            Weather in Yangju, KR <br>
+            {{ time }} <br>
+            <img src="{{ icons }}" alt=""> <br>
+            Cloudiness : Sky is {{ status }}<br>
+            Temperature : {{ temp }}°C
+        </h2>
     </div>
     <div class="sc-section">
-        <h2>Reply</h2>
+        <h1>Reply</h1>
+        {% load disqus_tags %}
+        {% disqus_show_comments %}
     </div>
     <div class="sc-section">
-        <h2>Contact</h2>
+        <h1>Contact</h1>
+        <dl class="list">
+            <h2>
+                <dt>Cell.</dt>
+                <dd>+82)1012340000</dd>
+                <dt>Email.</dt>
+                <dd>2044smile@naver.com</dd>
+            </h2>
+        </dl>
         <div class="icons">
             <a class="instagram" href="https://www.instagram.com/p2mang/" target="_blank"></a>
             <a class="github" href="https://github.com/2044smile" target="_blank"></a>

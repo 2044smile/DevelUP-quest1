@@ -6,6 +6,7 @@ import time
 def index(request):
     w = weather.weather()
     status = w.get_status() # 구름 상태를 가져온다. ex) Clear
+    icons = w.get_weather_icon_url()
     temp = round(w.get_temperature(unit='celsius')['temp'], 1) # 온도를 가져온다. round로 소수점 1자리 까지만
 
     now = time.localtime()
@@ -13,6 +14,7 @@ def index(request):
     # 현재 시각을 s 에 저장 ex) 2019-10-24 14:03:59
     return render(request, 'index.html', {
         'status' : status,
+        'icons' : icons,
         'temp' : temp,
         'time' : s,
     })
