@@ -1,11 +1,16 @@
-# import pandas as pd
+# import secret, requests
 # from bs4 import BeautifulSoup
-# import requests
-# import time
 #
-# url = 'http://openapi.gbis.go.kr/ws/rest/busrouteservice/station'
-# key = 'JAXQoLU9bWAw7Gduf%2FkvX8qzXMerBWUOVNPwpHKb%2BF24X0U%2FNcngVrl1xBKIwxCvAq9jL65W5StDUw3bliSRgg%3D%3D'
-# station = ''
+# URL = 'http://openapi.gbis.go.kr/ws/rest/busrouteservice/area?serviceKey='
+# SERVICE_KEY = secret.SERVICE_KEY
+# AREAID = '18'
+# KEYWORD = '11'
 #
-# api_url = url + 'ServiceKey=' +
+# parms = URL + SERVICE_KEY + '&areaId=' + AREAID +  '&keyword=' + KEYWORD
 #
+# req = requests.get(parms)
+# html = req.text
+#
+# soup = BeautifulSoup(html, 'html.parser')
+# for bus in soup.findAll('routeTypeCd'):
+#     print(bus.text)

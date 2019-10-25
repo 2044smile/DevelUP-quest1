@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98f89dda-b78b-439d-a488-3f33e3b0e9f4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/images/bus/23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/bus/34.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/bus/360.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/bus/3700.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/bus/38.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/bus/704.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/bus/7200.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/bus/7300.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/bus/8906.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Songchu/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Songchu/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bus.py" beforeDir="false" afterPath="$PROJECT_DIR$/bus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/secret.py" beforeDir="false" afterPath="$PROJECT_DIR$/secret.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
@@ -35,12 +44,13 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\0_Develup\Quest1\Songchu" />
-      <recent name="E:\0_Develup\Quest1\Songchu\static\images" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\0_Develup\Quest1\Songchu\templates" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\0_Develup\Quest1\Songchu\static\images\bus" />
+      <recent name="E:\0_Develup\Quest1\Songchu" />
+      <recent name="E:\0_Develup\Quest1\Songchu\static\images" />
       <recent name="E:\0_Develup\Quest1\Songchu\templates" />
     </key>
   </component>
@@ -95,7 +105,9 @@
       <workItem from="1571722725941" duration="6309000" />
       <workItem from="1571747690980" duration="5210000" />
       <workItem from="1571792906664" duration="2497000" />
-      <workItem from="1571886396413" duration="15972000" />
+      <workItem from="1571886396413" duration="16132000" />
+      <workItem from="1571918261347" duration="880000" />
+      <workItem from="1571979165294" duration="6878000" />
     </task>
     <task id="LOCAL-00001" summary="icons, Animation box-shadow effect, Google Font">
       <created>1571729008144</created>
@@ -125,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571893862623</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Reply(Disqus), Layout(Response), NaverMapAPI Complated">
+      <created>1571905572080</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1571905572080</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +169,7 @@
     <MESSAGE value="icons images upload" />
     <MESSAGE value="Bus Edit" />
     <MESSAGE value="Weather.py, Views, index.html Complated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Weather.py, Views, index.html Complated" />
+    <MESSAGE value="Reply(Disqus), Layout(Response), NaverMapAPI Complated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reply(Disqus), Layout(Response), NaverMapAPI Complated" />
   </component>
 </project>

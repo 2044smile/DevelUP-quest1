@@ -18,7 +18,7 @@
     }
 }
 
-body, h1, h2, h3, p, ul, img, dl, dd{
+body, h1, h2, h3, p, ul, img, dl, dd, img{
     margin: 0;
     padding: 0;
 }
@@ -226,9 +226,17 @@ body {
     }
     .content {
         margin-left: 60vw;
+        color: white;
     }
 }
 
 #map {
     margin-top: 5px;
 }
+
+/* BUS */
+.busmap {
+    width: 100%;
+    height: 350px;
+}
+
