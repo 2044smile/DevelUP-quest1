@@ -95,7 +95,7 @@ body {
 }
 
 .portrait {
-    background-image: url("/static/images/profile.png");
+    background-image: url("/static/images/profile.jpg");
     background-size: cover;
     background-position: center;
     padding-top: 56.25%;

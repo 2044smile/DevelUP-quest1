@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98f89dda-b78b-439d-a488-3f33e3b0e9f4" name="Default Changelist" comment="">
+    <list default="true" id="98f89dda-b78b-439d-a488-3f33e3b0e9f4" name="Default Changelist" comment="배포용 세팅">
+      <change afterPath="$PROJECT_DIR$/static/images/profile.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/profile.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,13 +36,14 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\0_Develup\Quest1\Songchu\templates" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\0_Develup\Quest1\Songchu\static\images" />
       <recent name="E:\0_Develup\Quest1\Songchu\static\images\bus" />
       <recent name="E:\0_Develup\Quest1\Songchu" />
       <recent name="E:\0_Develup\Quest1\Songchu\static\images" />
+      <recent name="E:\0_Develup\Quest1\Songchu\templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\0_Develup\Quest1\Songchu\templates" />
     </key>
   </component>
@@ -96,7 +102,8 @@
       <workItem from="1571918261347" duration="880000" />
       <workItem from="1571979165294" duration="7045000" />
       <workItem from="1572096551919" duration="610000" />
-      <workItem from="1572098359324" duration="363000" />
+      <workItem from="1572098359324" duration="2326000" />
+      <workItem from="1572163754816" duration="257000" />
     </task>
     <task id="LOCAL-00001" summary="icons, Animation box-shadow effect, Google Font">
       <created>1571729008144</created>
@@ -140,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571988194014</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="배포 전 정상구동, requirements.txt">
+      <created>1572098786881</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1572098786881</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +181,7 @@
     <MESSAGE value="Weather.py, Views, index.html Complated" />
     <MESSAGE value="Reply(Disqus), Layout(Response), NaverMapAPI Complated" />
     <MESSAGE value="busmap images complated, Dropdown menu(Bus)" />
-    <option name="LAST_COMMIT_MESSAGE" value="busmap images complated, Dropdown menu(Bus)" />
+    <MESSAGE value="배포 전 정상구동, requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="배포 전 정상구동, requirements.txt" />
   </component>
 </project>
