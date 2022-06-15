@@ -6,7 +6,7 @@
 
 - 사용기술: Git, PyOWM, DISQUS, Naver MAP, postman
 
-- 서버: AWS EC2, ECR, Docker, Nginx
+- 서버: AWS EC2
 
 - DB: sqlite3
 
@@ -15,5 +15,3 @@
 - 깃허브 URL: https://github.com/2044smile/DevelUP-quest1
 
 - API를 사용하면서 활용하는 방법을 익혔고, DISQUS를 등록하여 댓글 시스템을 구현하였습니다.
-
-모든 API 테스트는 Postman을 이용하였습니다.
