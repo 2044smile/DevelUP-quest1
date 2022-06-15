@@ -7,6 +7,10 @@
 - 사용기술: Git, PyOWM, DISQUS, Naver MAP, postman
 
 - 서버: AWS EC2
+  - EC2 서버 기본 세팅
+    - sudo apt-get update
+    - sudo apt-get dist-upgrade
+    - sudo apt-get install python3-pip
 
 - DB: sqlite3
 
