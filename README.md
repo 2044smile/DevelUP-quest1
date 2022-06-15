@@ -4,7 +4,7 @@
 
 - 사용 프레임워크: Django
 
-- 사용기술: Git, PyOWM, DISQUS, Naver MAP, postman
+- 사용기술: Git, PyOWM, DISQUS, Naver MAP, uWSGI
 
 - 서버: AWS EC2
   - EC2 서버 기본 세팅
