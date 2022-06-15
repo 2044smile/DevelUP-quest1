@@ -14,7 +14,7 @@
 
 - DB: sqlite3
 
-- 사이트 URL: http://ec2-13-209-182-32.ap-northeast-2.compute.amazonaws.com/
+- 사이트 URL: http://ec2-3-39-23-237.ap-northeast-2.compute.amazonaws.com:8080/
 
 - 깃허브 URL: https://github.com/2044smile/DevelUP-quest1
 
