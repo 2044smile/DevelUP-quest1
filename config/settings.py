@@ -126,6 +126,16 @@ USE_TZ = True
 
 ROOT_DIR = os.path.dirname(BASE_DIR)
 
+<<<<<<< HEAD
+=======
+STATIC_URL = '/static/'
+STATIC_DIR = os.path.join(BASE_DIR, 'static')
+
+STATICFILES_DIRS = [
+    STATIC_DIR,
+]
+
+>>>>>>> 9d87fc8d5b1ea170b8da137dfa23797d14cfdfff
 
 # DISQUS
 DISQUS_WEBSITE_SHORTNAME = 'songchu'
