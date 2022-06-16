@@ -2,24 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98f89dda-b78b-439d-a488-3f33e3b0e9f4" name="Default Changelist" comment="배포용 세팅">
-      <change afterPath="$PROJECT_DIR$/static/blog.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/github.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/bus/23.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/bus/34.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/bus/360.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/bus/3700.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/bus/38.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/bus/704.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/bus/7200.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/bus/7300.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/bus/8906.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/instagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/profile.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Songchu/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Songchu/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
