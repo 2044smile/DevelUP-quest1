@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'mp$&kkr&s=!lu(ww^jsv4w)v7p=)k9g%s6gi(ybe27ooc(9)yg'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 # DEBUG = True
 
 ALLOWED_HOSTS = ['*']
@@ -126,13 +126,16 @@ USE_TZ = True
 
 ROOT_DIR = os.path.dirname(BASE_DIR)
 
+# STATIC_ROOT = "/var/www/DevelUP/static/"
 STATIC_URL = '/static/'
-STATIC_DIR = os.path.join(BASE_DIR, 'static')
+MEDIA_URL = '/media/'
 
-STATICFILES_DIRS = [
-    STATIC_DIR,
-]
+if DEBUG:
+    STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+else:
+    STATIC_URL = os.path.join(BASE_DIR, 'static')
 
+MEDIA_ROOT = [os.path.join(BASE_DIR, 'media')]
 
 # DISQUS
 DISQUS_WEBSITE_SHORTNAME = 'songchu'

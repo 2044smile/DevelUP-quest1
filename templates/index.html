@@ -1,5 +1,4 @@
-{% load staticfiles %}
-<!doctype html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,9 +19,10 @@
 <div class="sc"> {# sc는 songchu의 줄임 #}
     <div class="sc-introduce">
         <div class="header">
-            <div class="introduce">
+            <div class="introduce" style="color: white;">
+                <h1>Hello</h1>
                 Information about
-                <div class="introduce-function">
+                <div class="introduce-function" style="background-color: #111; color: red;">
                     <ul class="introduce-function-list">
                         <li>Contact</li>
                         <li>MAP</li>
@@ -33,7 +33,7 @@
                 </div>
                 <h1 class="introduce-title">Introducing Songchu</h1></div>
         </div>
-        <p class="content">면사무소 소재지는 권율로 7(일영리 137-2).
+        <p class="content" style="color: white;">면사무소 소재지는 권율로 7(일영리 137-2).
             양주시의 다른 지역과는 말머리고개로 사실상 완전히 분리되어 있어, 생활권은 서울특별시 은평구, 고양시, 의정부시와 엮여 있다. 예전에는 이 지역에 거주하는 학생들이 90% 이상 서울 지역으로
             진학했지만 의정부가 평준화된 이후 대부분 의정부로 중학교 진학을 한다.
             서울시 은평구, 고양시, 의정부시 사이에 있기에 이를 왔다갔다 하는 버스가 여러 대 다닌다. 송추에서 출발해 은평구 방면으로 가는 서울 버스 704번, 의정부시와 은평구를 왕복하는 의정부 버스
@@ -43,13 +43,13 @@
             실생활에서는 거의 다 송추, 일영이라고 부르지 장흥이라고 하는 경우는 드물기 때문에 의외로 혼동될 일은 적다.
             서울시에 직접 맞닿아 있는 2개의 면 중 하나다. 나머지 하나는 남양주시 별내면.
             <br>-나무위키-
-
         </p>
     </div>
-    <div class="sc-section">
+    <div class="introduce-map" style="color:white;">
         <h1>Map</h1>
         <div id="map" style="width:100%;height:400px;"></div>
     </div>
+    <br>
     <script>
         var mapOptions = {
             center: new naver.maps.LatLng(37.718693, 126.975022),
@@ -57,10 +57,9 @@
         };
         var map = new naver.maps.Map('map', mapOptions);
     </script>
-    <div class="sc-section">
-        <h1><a href="#">Bus</a></h1>
+    <div class="introduce-bus" style="color:white;">
         <ul class="downtown">
-            <h2><a href="#">Downtown Bus</a></h2>
+            <h1 style="font-size: 170%;">Downtown Bus</h1>
             <li>
                 <h3>23</h3>
                 <div class="busmap">
@@ -92,8 +91,9 @@
                 </div>
             </li>
         </ul>
+        <br>
         <ul class="countryside">
-            <h2><a href="">Countryside Bus</a></h2>
+            <h1 style="font-size: 170%;">Countryside Bus</h1>
             <li>
                 <h3>3700</h3>
                 <div class="busmap">
@@ -120,8 +120,8 @@
             </li>
         </ul>
     </div>
-    <div class="sc-section">
-        <h1>Weather</h1>
+    <br>
+    <div class="introduce-weather" style="color:white;">
         <h2>
             Weather in Yangju, KR <br>
             {{ time }} <br>
@@ -130,26 +130,21 @@
             Temperature : {{ temp }}°C
         </h2>
     </div>
-    <div class="sc-section">
-        <h1>Reply</h1>
+    <div class="introduce-reply" style="color: white;">
         {% load disqus_tags %}
         {% disqus_show_comments %}
     </div>
-    <div class="sc-section">
-        <h1>Contact</h1>
-        <dl class="list">
-            <h2>
-                <dt>Cell.</dt>
-                <dd>+82)1012340000</dd>
-                <dt>Email.</dt>
-                <dd>2044smile@naver.com</dd>
-            </h2>
-        </dl>
-        <div class="icons">
-            <a class="instagram" href="https://www.instagram.com/p2mang/" target="_blank"></a>
-            <a class="github" href="https://github.com/2044smile" target="_blank"></a>
-            <a class="blog" href="https://newbiecs.tistory.com/" target="_blank"></a>
-        </div>
+    <br>
+    <div class="introduce-contact" style="color: white;">
+        <dt>Cell.</dt>
+        <dd>+82)1012340000</dd>
+        <dt>Email.</dt>
+        <dd>2044smile@naver.com</dd>
+
+        <a href="https://www.instagram.com/p2mang/"><img src="/static/images/instagram.png" alt=""></a>
+        <a href="https://github.com/2044smile"><img src="/static/images/github.png" alt=""></a>
+        <a href="https://newbiecs.tistory.com/"><img src="/static/images/blog.png" alt=""></a>
+
     </div>
 </div>
 </body>
