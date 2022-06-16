@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98f89dda-b78b-439d-a488-3f33e3b0e9f4" name="Default Changelist" comment="배포용 세팅" />
+    <list default="true" id="98f89dda-b78b-439d-a488-3f33e3b0e9f4" name="Default Changelist" comment="배포용 세팅">
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
