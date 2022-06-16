@@ -126,12 +126,7 @@ USE_TZ = True
 
 ROOT_DIR = os.path.dirname(BASE_DIR)
 
-<<<<<<< HEAD
 # STATIC_ROOT = "/var/www/DevelUP/static/"
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 0a30208163acd6ac8f48e877cb5ecf54b20f61a2
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
@@ -140,11 +135,7 @@ if DEBUG:
 else:
     STATIC_URL = os.path.join(BASE_DIR, 'static')
 
-<<<<<<< HEAD
 MEDIA_ROOT = [os.path.join(BASE_DIR, 'media')]
-=======
->>>>>>> 9d87fc8d5b1ea170b8da137dfa23797d14cfdfff
->>>>>>> 0a30208163acd6ac8f48e877cb5ecf54b20f61a2
 
 # DISQUS
 DISQUS_WEBSITE_SHORTNAME = 'songchu'
