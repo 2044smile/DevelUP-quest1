@@ -16,7 +16,5 @@
 
 - 사이트 URL: http://ec2-3-39-23-237.ap-northeast-2.compute.amazonaws.com:8080/
 
-- 깃허브 URL: https://github.com/2044smile/DevelUP-quest1
-
 - Frontend HTML, CSS, JS를 활용하였습니다.
 - API를 사용하면서 활용하는 방법을 익혔고, DISQUS를 등록하여 댓글 시스템을 구현하였습니다.
