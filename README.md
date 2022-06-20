@@ -12,6 +12,9 @@
     - sudo apt-get dist-upgrade
     - sudo apt-get install python3-pip
 
+- uWSGI
+  - `uwsgi --http :8080 --home /srv/DevelUP-quest1/myvenv --chdir /srv/DevelUP-quest1/ -w config.wsgi`
+
 - DB: sqlite3
 
 - 사이트 URL: http://ec2-3-39-23-237.ap-northeast-2.compute.amazonaws.com:8080/
