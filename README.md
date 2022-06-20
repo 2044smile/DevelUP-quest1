@@ -13,6 +13,7 @@
     - sudo apt-get install python3-pip
 
 - uWSGI
+  - 정적인 웹 서버(Apache / Nginx)와 python으로 작성된 Web Framework(Flask / Django) 사이의 통신을 도와주는 역할 
   - `uwsgi --http :8080 --home /srv/DevelUP-quest1/myvenv --chdir /srv/DevelUP-quest1/ -w config.wsgi`
 
 - DB: sqlite3
