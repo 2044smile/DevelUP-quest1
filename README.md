@@ -11,6 +11,7 @@
     - sudo apt-get update
     - sudo apt-get dist-upgrade
     - sudo apt-get install python3-pip
+    - sudo apt install python3-virtualenv
 
 - uWSGI
   - 정적인 웹 서버(Apache / Nginx)와 python으로 작성된 Web Framework(Flask / Django) 사이의 통신을 도와주는 역할
