@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'mp$&kkr&s=!lu(ww^jsv4w)v7p=)k9g%s6gi(ybe27ooc(9)yg'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 # DEBUG = True
 
 ALLOWED_HOSTS = ['*']
@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'whitenoise.runserver_nostatic',
     'disqus',
     'django.contrib.sites',
     'django.contrib.admin',
@@ -47,6 +48,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -126,16 +128,16 @@ USE_TZ = True
 
 ROOT_DIR = os.path.dirname(BASE_DIR)
 
-# STATIC_ROOT = "/var/www/DevelUP/static/"
-STATIC_URL = '/static/'
-MEDIA_URL = '/media/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_URL = 'static/'
+MEDIA_URL = 'media/'
 
 if DEBUG:
     STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 else:
-    STATIC_URL = os.path.join(BASE_DIR, 'static')
+    STATIC_URL = os.path.join(BASE_DIR, 'static/')
 
-MEDIA_ROOT = [os.path.join(BASE_DIR, 'media')]
+MEDIA_ROOT = [os.path.join(BASE_DIR, 'media/')]
 
 # DISQUS
 DISQUS_WEBSITE_SHORTNAME = 'songchu'
