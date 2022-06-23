@@ -19,7 +19,7 @@
   - `Client <-> Nginx <-> uWSGI <-> Django`
   - `uwsgi --http :8080 --home /srv/DevelUP-quest1/venv --chdir /srv/DevelUP-quest1/ -w config.wsgi`
   - `sudo chown -R ubuntu:ubuntu /var/log/uwsgi/DevelUP/`
-  - `uwsgi --ini mysite.ini`
+  - `uwsgi --ini /home/ubuntu/srv/DevelUP-quest1/config/uwsgi/mysite.ini`
 
 - Nginx
   - `sudo apt-get install nginx`
