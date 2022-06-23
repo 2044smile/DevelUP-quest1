@@ -18,13 +18,15 @@
   - 즉, 파이썬 어플리케이션이 웹 서버와 통신하기 위한 명세라고 보면 된다.
   - `Client <-> Nginx <-> uWSGI <-> Django`
   - `uwsgi --http :8080 --home /srv/DevelUP-quest1/venv --chdir /srv/DevelUP-quest1/ -w config.wsgi`
+  - `sudo chown -R ubuntu:ubuntu /var/log/uwsgi/DevelUP/`
+  - `uwsgi --ini mysite.ini`
 
 - Nginx
-  - sudo apt-get install nginx
-  - sudo /etc/init.d/nginx start
-  - sudo ln -s /etc/nginx/sites-available/mysite_nginx.conf /etc/nginx/sites-enabled/
-  - python manage.py collectstatic
-  - sudo /etc/init.d/nginx restart
+  - `sudo apt-get install nginx`
+  - `sudo /etc/init.d/nginx start`
+  - `sudo ln -s /etc/nginx/sites-available/mysite_nginx.conf /etc/nginx/sites-enabled/`
+  - `python manage.py collectstatic`
+  - `sudo /etc/init.d/nginx restart`
 
 - DB: sqlite3
 
