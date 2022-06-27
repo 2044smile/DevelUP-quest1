@@ -5,7 +5,8 @@
 
 - 사용 프레임워크: Django
 
-- 사용기술: Git, PyOWM, DISQUS, Naver MAP(https://console.ncloud.com/dashboard), uWSGI, Nginx
+- 프론트앤드 사용 기술: HTML, CSS, JS
+- 백엔드 사용 기술: Git, PyOWM, DISQUS, Naver MAP(https://console.ncloud.com/dashboard), uWSGI, Nginx
 
 - 서버: AWS EC2
   - EC2 서버 기본 세팅
@@ -33,5 +34,4 @@
 
 - 사이트 URL: http://ec2-3-39-23-237.ap-northeast-2.compute.amazonaws.com:8080/
 
-- Frontend HTML, CSS, JS를 활용하였습니다.
 - API를 사용하면서 활용하는 방법을 익혔고, DISQUS를 등록하여 댓글 시스템을 구현하였습니다.
