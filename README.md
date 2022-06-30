@@ -32,6 +32,8 @@
 
 - DB: sqlite3
 
-- 사이트 URL: http://ec2-3-39-23-237.ap-northeast-2.compute.amazonaws.com:8080/
-
 - API를 사용하면서 활용하는 방법을 익혔고, DISQUS를 등록하여 댓글 시스템을 구현하였습니다.
+
+<h1>난제</h1> 
+<h2>1. directory index of "/home/ubuntu/srv/DevelUP-quest1/" is forbidden</h2>
+<h3>chmod 755 권한 주기 /home/ubuntu (실패)</h3>
