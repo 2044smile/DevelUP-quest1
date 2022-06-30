@@ -37,3 +37,6 @@
 <h1>난제</h1> 
 <h2>1. directory index of "/home/ubuntu/srv/DevelUP-quest1/" is forbidden</h2>
 <h3>chmod 755 권한 주기 /home/ubuntu (실패)</h3>
+
+<h1>해결</h1>
+<h2>root의 경로를 templates까지 추가해주니까 홈페이지는 뜬다</h2>
