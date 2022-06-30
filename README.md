@@ -19,7 +19,7 @@
   - 정적인 웹 서버(Apache / Nginx)와 python으로 작성된 Web Framework(Flask / Django) 사이의 통신을 도와주는 역할
   - 즉, 파이썬 어플리케이션이 웹 서버와 통신하기 위한 명세라고 보면 된다.
   - `Client <-> Nginx <-> uWSGI <-> Django`
-  - `uwsgi --http :8080 --home /srv/DevelUP-quest1/venv --chdir /srv/DevelUP-quest1/ -w config.wsgi`
+  - `uwsgi --http :8080 --home /home/ubuntu/srv/DevelUP-quest1/venv --chdir /home/ubuntu/srv/DevelUP-quest1/ -w config.wsgi`
   - `sudo chown -R ubuntu:ubuntu /var/log/uwsgi/DevelUP/`
   - `uwsgi --ini /home/ubuntu/srv/DevelUP-quest1/config/uwsgi/mysite.ini`
 
