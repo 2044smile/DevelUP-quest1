@@ -40,4 +40,4 @@
 
 <h1>해결</h1>
 <h2>root의 경로를 templates까지 추가해주니까 홈페이지는 뜬다</h2>
-하지만 templates까지 경로를 주면 HTML CSS JS 가 전부 엉망이 된다.
+하지만 templates까지 경로를 주면 HTML CSS JS 가 전부 엉망이 된다..
