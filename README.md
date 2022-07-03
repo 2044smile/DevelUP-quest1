@@ -30,6 +30,11 @@
   - python manage.py collectstatic
   - sudo /etc/init.d/nginx restart
 
+- Finally
+  - sudo systemctl daemon-reload
+  - sudo systemctl restart nginx uwsgi
+  - sudo systemctl stop nginx uwsgi
+
 - DB: sqlite3
 
 - API를 사용하면서 활용하는 방법을 익혔고, DISQUS를 등록하여 댓글 시스템을 구현하였습니다.
