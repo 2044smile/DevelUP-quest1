@@ -1,0 +1,16 @@
+[Unit]
+Description=uWSGI service
+After=syslog.target
+
+[Service]
+ExecStart=/home/ubuntu/srv/DevelUP-quest1/venv/bin/uwsgi -i /home/ubuntu/srv/DevelUP-quest1/config/wsgi/wsgi.ini
+
+
+Restart=always
+KillSignal=SIGQUIT
+Type=notify
+StandardError=syslog
+NotifyAccess=all
+
+[Install]
+WantedBy=multi-user.target
