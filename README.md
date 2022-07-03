@@ -33,11 +33,3 @@
 - DB: sqlite3
 
 - API를 사용하면서 활용하는 방법을 익혔고, DISQUS를 등록하여 댓글 시스템을 구현하였습니다.
-
-<h1>난제</h1> 
-<h2>1. directory index of "/home/ubuntu/srv/DevelUP-quest1/" is forbidden</h2>
-<h3>chmod 755 권한 주기 /home/ubuntu (실패)</h3>
-
-<h1>해결</h1>
-<h2>root의 경로를 templates까지 추가해주니까 홈페이지는 뜬다</h2>
-하지만 templates까지 경로를 주면 HTML CSS JS 가 전부 엉망이 된다..
