@@ -58,6 +58,13 @@ body {
     line-height: 1;
     /* 자신의 부모 폰트사이즈 30px의 1.5배가 되게끔 해라! 자신의 부모 폰트사이즈가 변경되면 같이 변경된다.*/
 }
+.portrait {
+    background-image: url("/home/ubuntu/srv/DevelUP-quest1/static/images/profile.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 56.25%;
+}
+
 .sc {
     padding: 7%; /* padding 7% 는 top, right, bottom, left 전부를 7%로 */
 }
